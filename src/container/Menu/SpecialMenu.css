@@ -1,0 +1,20 @@
+.app__specialMenu {
+  flex-direction: column;
+  background-color: var(--color-black);
+}
+
+.app__specialMenu-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.app__specialMenu-menu {
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  /* 위치 center에서 조정 */
+  align-items: flex-start;
+  /* 모바일 모드에서 사용하기 위해 미리 선언 */
+  flex-direction: row;
+}
