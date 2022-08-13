@@ -8,6 +8,7 @@
   /* em,rem 차이 */
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  /* 각 라인마다 117px */
   line-height: 117px;
   font-size: 90px;
 }
