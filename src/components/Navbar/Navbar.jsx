@@ -5,6 +5,7 @@ import images from "../../constants/images";
 import "./Navbar.css";
 
 const Navbar = () => {
+  // 햄버거바 상태조작
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-black);
+  background-color: var(--color-black);
   padding: 1rem 2rem;
 }
 
@@ -25,6 +25,7 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  /* gap: 2rem; === margin: 0 1rem */
 }
 
 .app__navbar-links li {
@@ -38,6 +39,8 @@
 
 .app__navbar-login {
   display: flex;
+  /* 없어도 상관은 없다. 부모 요소에서
+space-between으로 공간이 이미 나눠졌기 때문에 */
   justify-content: flex-end;
   align-items: center;
 }
@@ -53,6 +56,7 @@
 }
 
 .app__navbar-login div {
+  /* 좌우로 칸을 나누는데 좋은 트릭. */
   width: 1px;
   height: 30px;
   background-color: var(--color-grey);
