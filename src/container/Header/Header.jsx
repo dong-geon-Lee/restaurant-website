@@ -5,11 +5,13 @@ import images from "../../constants/images";
 
 export const Container = styled.div`
   background-color: #000;
+  padding: 14rem 0;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   padding: 4rem;
+  align-items: center;
 
   @media screen and (max-width: 1180px) {
     display: flex;

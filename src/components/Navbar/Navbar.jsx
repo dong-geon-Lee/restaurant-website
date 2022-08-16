@@ -99,6 +99,16 @@ export const Overlay = styled.section`
   }
 `;
 
+export const Modal = keyframes`
+    0% {
+      transform: translateX(-25%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+`;
+
 export const OverlayList = styled.ul`
   display: none;
   list-style: none;
@@ -130,16 +140,6 @@ export const OverlayList = styled.ul`
       }
     }
   }
-`;
-
-export const Modal = keyframes`
-    0% {
-      transform: translateX(-25%);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
 `;
 
 const Navbar = () => {
