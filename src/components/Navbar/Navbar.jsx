@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import images from "../../constants/images";
 import "./Navbar.css";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -115,6 +115,8 @@ export const OverlayList = styled.ul`
     height: 100vh;
     background-color: #000;
     z-index: 3;
+    /* 간단하게 애니메이션 컴포넌트 만들고 넣어주기만 하면 된다. */
+    animation: ${Modal} 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
     & li {
       margin: 1rem 0;
@@ -128,6 +130,16 @@ export const OverlayList = styled.ul`
       }
     }
   }
+`;
+
+export const Modal = keyframes`
+    0% {
+      transform: translateX(-25%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
 `;
 
 const Navbar = () => {
