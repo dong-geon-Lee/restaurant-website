@@ -13,6 +13,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
+  /* 배경이 고정된다. 스크롤해도 움직이지않는다 */
   background-attachment: fixed;
 }
 
