@@ -187,8 +187,8 @@ const SpecialMenu = () => (
           <Title>Cocktails</Title>
 
           <ListGroup>
-            {data.cocktails.map((cocktails) => (
-              <List>
+            {data.cocktails.map((cocktails, index) => (
+              <List key={index}>
                 <TextBox>
                   <h2>{cocktails.title}</h2>
                   <Line></Line>
